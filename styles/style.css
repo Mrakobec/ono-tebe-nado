@@ -39,21 +39,6 @@
     border-bottom: 1px solid;
     text-decoration: none;  
 }
-/* 
-.header__links-list-item-first {
-    width: 67px;
-    height: 21px;
-}
-
-.header__links-list-item-second {
-    width: 169px;
-    height: 22px;
-}
-
-.header__links-list-item-third {
-    width: 129px;
-    height: 22px;
-} */
 
 .header__menu-logo-box {
     display: flex;
@@ -79,10 +64,6 @@
     margin: 5px 0 2px 0;
 }
 
-.header__contacts-email {
-    margin-bottom: 1px;
-}
-
 .header__address {
     font-family: 'Raleway';
     font-style: normal;
@@ -94,22 +75,29 @@
 }
 
 .header__contacts-tel {
+    width: 133px;
+    height: 24px;
     display: flex;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 135%;
+    border-bottom: 1px solid;
+    text-decoration: none;  
 
     color: #000000;
 }
 
 .header__contacts-email {
+    width: 133px;
+    height: 24px;
     display: flex;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 135%;
-    margin-bottom: 1px;
+    border-bottom: 1px solid;
+    text-decoration: none;  
 
     color: #000000;
 }
@@ -371,4 +359,57 @@
 
 .letter-spacing-xl {
     letter-spacing: 0.04em;
+}
+
+.footer {
+    height: 98px;
+    display: grid;
+    grid-template-columns: 185px 185px 185px;
+    margin: 193px 50px 88px;
+    /* background-color: gray; */
+}
+
+.footer__contacts {
+    width: 240px;
+    height: 98px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__address {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #000000;
+}
+
+.footer__contacts-tel {
+    width: 133px;
+    height: 24px;
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+    border-bottom: 1px solid;
+    text-decoration: none;  
+
+    color: #000000;
+}
+
+.footer__contacts-email {
+    width: 133px;
+    height: 24px;
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+    border-bottom: 1px solid;
+    text-decoration: none;  
+
+    color: #000000;
 }
