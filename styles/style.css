@@ -305,3 +305,70 @@
     border-bottom: 1px solid;
     text-decoration: none;  
 }
+
+.about {
+    display: inline-grid;
+    grid-template-columns: 334px auto;
+    margin: 148px 23px 0px;
+}
+
+.about__logo {
+    display: flex;
+    width: 240px;
+    height: 240px;
+    margin: 35px 0 0 47px;
+    background-color: #000;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__logo-image {
+    width: 149px;
+    height: 114px;
+}
+
+.about__text-block {
+    height: 449px;
+    display: flex;
+    flex-direction: column;
+    margin: 134px 5px 0 25px;
+}
+
+.about__text-block-title {
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.about__text-block-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 24px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #000;
+}
+
+.letter-spacing-ms {
+    letter-spacing: -0.01em;
+}
+
+.letter-spacing-s {
+    letter-spacing: 0.01em;
+}
+
+.letter-spacing-m {
+    letter-spacing: 0.02em;
+}
+
+.letter-spacing-l {
+    letter-spacing: 0.03em;
+}
+
+.letter-spacing-xl {
+    letter-spacing: 0.04em;
+}
