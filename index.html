@@ -5,6 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <link rel="stylesheet" href="./styles/global.css"/>
+    <link rel="stylesheet" href="./styles/style.css"/>
+    <link rel="stylesheet" href="./fonts/fonts.css"/>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__menu">
+        <div class="header__menu-logo-box">
+          <ul class="header__links-list">
+            <li class="header__links-list-item li__no-dot header__links-list-item-active header__links-list-item-first">
+              <a href="#0" class="header__menu-link">
+                главная
+              </a>
+            </li>
+            <li class="header__links-list-item li__with-line header__links-list-item-second ">
+              <a href="#0" class="header__menu-link">
+                посмотреть лоты
+              </a>
+            </li>
+            <li class="header__links-list-item li__with-line header__links-list-item-third">
+              <a href="#0" class="header__menu-link">
+                об аукционе
+              </a>
+            </li>
+          </ul>
+          <div class="header__logo">
+            <img class="header__logo-img"src="images/logo-black.svg"/>
+          </div>
+        </div>
+        <div class="header__contacts">
+          <a class="header__contacts-tel" href="tel:+9 999 555 5555">+9 999 555 5555</a>
+          <a class="header__contacts-email" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          <address class="header__address">
+            наб. Принсенграхт 263-</br> 265, Амстердам
+          </address>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="cover">
+        <div class="cover__image"></div>
+        <div class="cover__main-text">
+          <span class="accent-span">О<span class="accent-span accent-span-spacing">НО</span></span>
+          <span class="accent-span text-center">ТЕ<span class="accent-span-spacing">БЕ</span></span>
+          <span class="accent-span accent-span-spacing text-right">Н<span class="accent-span-sub-spacing">АД</span>О</span>
+        </div>
+        <div class="cover__subline">
+          <span class="cover__subline-text">
+            Аукцион вещей,
+            <span class="cover__subline-text-v">в </span>
+            которые никто не верил
+          </span>
+          <button class="cover__subline-bet-button">СДЕЛАТЬ СТАВКУ</button>
+        </div>
+      </div>
+      <div class="lots"></div>
+      <div class="about"></div>
+    </main>
+    <footer></footer>
+  </body>
 </html>

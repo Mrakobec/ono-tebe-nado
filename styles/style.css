@@ -1,1 +1,210 @@
 /* место для вашего кода */
+
+.header__menu {
+    display: flex;
+    flex-direction: row;
+    margin: 92px 24px 0;
+    width: 1052px;
+    height: 105px;
+    gap: 186px;
+}
+
+.header__links-list {
+    list-style: circle;
+    margin: 44px 0px 40px 26px;
+    display: flex;
+    gap: 32px;
+    width: 393px;
+    height: 22px;
+}
+
+.header__links-list-item .header__menu-link {
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    color: #000;
+    display: flex;
+}
+
+.li__no-dot {
+    list-style-type: none;
+}
+
+.header__links-list-item-active .header__menu-link {
+    text-decoration: none;
+}
+
+.li__with-line .header__menu-link {
+    border-bottom: 1px solid;
+    text-decoration: none;  
+}
+/* 
+.header__links-list-item-first {
+    width: 67px;
+    height: 21px;
+}
+
+.header__links-list-item-second {
+    width: 169px;
+    height: 22px;
+}
+
+.header__links-list-item-third {
+    width: 129px;
+    height: 22px;
+} */
+
+.header__menu-logo-box {
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+}
+
+.header__logo {
+    width: 148px;
+    height: 105px;
+}
+
+.header__logo-img {
+    width: 100%;
+    height: 100%;
+}
+
+.header__contacts {
+    width: 240px;
+    height: 98px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0 2px 0;
+}
+
+.header__contacts-email {
+    margin-bottom: 1px;
+}
+
+.header__address {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #000000;
+}
+
+.header__contacts-tel {
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+
+    color: #000000;
+}
+
+.header__contacts-email {
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+    margin-bottom: 1px;
+
+    color: #000000;
+}
+
+.header {
+    margin-bottom: 96px;
+}
+
+.cover {
+    position: relative;
+    width: 100%;
+    height: 757px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.cover__image {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 757px;
+    background-image: url(/images/cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+ 
+.cover__main-text {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    padding: 165px 50px 0px 50px; 
+    gap: 20px;
+}
+
+.accent-span {
+    display: flex;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 115%;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.accent-span-spacing {
+    letter-spacing: 0.6em;
+}
+
+.accent-span-sub-spacing {
+    letter-spacing: 0.3em;
+}
+
+.text-center {
+    padding-left: 286px;
+    line-height: 100%;
+    letter-spacing: 0.3em;
+}
+
+.text-right {
+    padding-left: 583px;
+    text-align: right;
+    line-height: 100%;
+    letter-spacing: 0.6em;
+}
+
+.cover__subline {
+    display: flex;
+    flex-direction: row;
+    margin: 135px 50px 51px 78px;
+    justify-content: space-between;
+}
+
+.cover__subline-text {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 127%;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 12px 0 11px;
+    word-spacing: 19px;
+}
+
+/* в макете вместо пробела присутствует это */
+.cover__subline-text-v {
+    word-spacing: 17px;
+}
+
+.cover__subline-bet-button {
+    width: 256px;
+    height: 51px;
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
