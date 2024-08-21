@@ -200,6 +200,7 @@
     flex-wrap: wrap;
     gap: 25px;
     height: auto;
+    list-style: none;
 }
 
 .card-link {
