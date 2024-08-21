@@ -445,3 +445,7 @@
     gap: 48px;
 }
 
+.footer__links-list-item-active .footer__menu-link {
+    text-decoration: none;
+}
+
