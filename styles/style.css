@@ -1,12 +1,10 @@
 /* место для вашего кода */
 
-.header__menu {
+.header{
     display: flex;
     flex-direction: row;
-    margin: 92px 24px 0;
+    margin: 92px 24px 96px;
     width: 1052px;
-    height: 105px;
-    gap: 186px;
 }
 
 .header__links-list {
@@ -14,12 +12,10 @@
     margin: 44px 0px 40px 26px;
     display: flex;
     gap: 32px;
-    width: 393px;
-    height: 22px;
 }
 
 .header__links-list-item .header__menu-link {
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 18px;
     letter-spacing: 0.01em;
@@ -40,15 +36,11 @@
     text-decoration: none;  
 }
 
-.header__menu-logo-box {
-    display: flex;
-    flex-direction: row;
-    gap: 36px;
-}
-
 .header__logo {
     width: 148px;
     height: 105px;
+    margin-left: 36px;
+    margin-right: 186px;
 }
 
 .header__logo-img {
@@ -56,118 +48,109 @@
     height: 100%;
 }
 
-.header__contacts {
-    width: 240px;
-    height: 98px;
+.contacts {
+    max-width: 240px;
     display: flex;
     flex-direction: column;
-    margin: 5px 0 2px 0;
-}
+    align-content: flex-start;
+    margin: 5px 0 2px 0px;
 
-.header__address {
-    font-family: 'Raleway';
+    font-family: 'Raleway',  sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-
     color: #000000;
-}
-
-.header__contacts-tel {
-    width: 133px;
-    height: 24px;
-    display: flex;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 135%;
-    border-bottom: 1px solid;
-    text-decoration: none;  
-
-    color: #000000;
-}
-
-.header__contacts-email {
-    width: 133px;
-    height: 24px;
-    display: flex;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 135%;
-    border-bottom: 1px solid;
-    text-decoration: none;  
-
-    color: #000000;
-}
-
-.header {
-    margin-bottom: 96px;
+    text-underline-offset: 4px;
 }
 
 .cover {
     position: relative;
     width: 100%;
-    height: 757px;
-    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
 }
 
 .cover__image {
+    width: 100%;
+    height: 100%;
     position: absolute;
     z-index: -1;
-    width: 100%;
-    height: 757px;
-    background-image: url(/images/cover.jpg);
-    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-size: cover;
+
+    background-image: url(/images/cover.jpg);
+}
+
+.overlay {
+    position:absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
 }
  
 .cover__main-text {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
-    width: 1000px;
     padding: 165px 50px 0px 50px; 
     gap: 20px;
 }
 
 .accent-span {
-    display: flex;
     font-weight: 700;
     font-size: 100px;
     line-height: 115%;
-    letter-spacing: 0.3em;
     text-transform: uppercase;
     color: #fff;
-}
-
-.accent-span-spacing {
-    letter-spacing: 0.6em;
 }
 
 .accent-span-sub-spacing {
     letter-spacing: 0.3em;
 }
 
+.accent-span-spacing {
+    letter-spacing: 0.6em;
+}
+
 .text-center {
-    padding-left: 286px;
+    text-align: center;
     line-height: 100%;
     letter-spacing: 0.3em;
 }
 
-.text-right {
-    padding-left: 583px;
-    text-align: right;
+.accent-span-nado {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
     line-height: 100%;
-    letter-spacing: 0.6em;
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.accient-span-spacing-n {
+    letter-spacing: 0.36em;
+}
+.accent-span-spacing-ad {
+    letter-spacing: -0.3em;
 }
 
 .cover__subline {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: row;
-    margin: 135px 50px 51px 78px;
     justify-content: space-between;
+    padding: 135px 50px 51px 78px;
 }
 
 .cover__subline-text {
@@ -186,6 +169,7 @@
 }
 
 .cover__subline-bet-button {
+    font-family:inherit; 
     width: 256px;
     height: 51px;
     font-weight: 500;
@@ -222,22 +206,36 @@
     display: flex;
     flex-grow: 1;
     width: 100%;
-    height: 563px;
+    min-height: 563px;
     max-width: 334px;
     margin-top: 27px;
+    text-decoration: none;
 }
 
 .card {
     position: relative;
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: rgba(0, 0, 0, 0.6);
+}
+
+.card__image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card__type-film {
+    background-image: url(/images/card-lot-01.jpg);
 }
 
 .card__title {
+    position: relative;
+    z-index: 1;
     font-weight: 700;
     font-size: 22px;
     line-height: 120%;
@@ -249,59 +247,32 @@
 }
 
 .card__text {
+    position: relative;
+    z-index: 1;
     font-weight: 400;
     font-size: 20px;
     line-height: 120%;
     color: #fff;
     margin: 0 40px 48px;
+    text-decoration: none;
 }
 
-.card_type_film {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-    background-image: url(/images/card-lot-01.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.card_type_book {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
+.card__type-book {
     background-image: url(/images/card-lot-02.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-.card_type_picture {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
+.card__type-picture {
     background-image: url(/images/card-lot-03.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.card_dot_spacing {
-    letter-spacing: 0.13em;
 }
 
 .lots__view-more {
-    width: 192px;
     display: block;
     font-weight: 400;
     font-size: 20px;
     color: #000;
     margin: 30px 0 0 40px;
-    border-bottom: 1px solid;
-    text-decoration: none;  
+    text-underline-offset: 4px;    
+    width: fit-content;
 }
 
 .about {
@@ -327,7 +298,6 @@
 }
 
 .about__text-block {
-    height: 449px;
     display: flex;
     flex-direction: column;
     margin: 134px 5px 0 25px;
@@ -351,101 +321,49 @@
     color: #000;
 }
 
-.letter-spacing-ms {
-    letter-spacing: -0.01em;
-}
-
-.letter-spacing-s {
-    letter-spacing: 0.01em;
-}
-
-.letter-spacing-m {
-    letter-spacing: 0.02em;
-}
-
-.letter-spacing-l {
-    letter-spacing: 0.03em;
-}
-
-.letter-spacing-xl {
-    letter-spacing: 0.04em;
-}
-
 .footer {
-    height: 98px;
     display: flex;
     flex-direction: row;
     margin: 193px 50px 88px;
     width: 1000px;
-}
-
-.footer__contacts {
-    width: 240px;
-    height: 98px;
-    display: flex;
-    flex-direction: column;
-}
-
-.footer__address {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-
-    color: #000000;
-}
-
-.footer__contacts-tel {
-    width: 133px;
-    height: 24px;
-    display: flex;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 135%;
-    border-bottom: 1px solid;
-    text-decoration: none;  
-
-    color: #000000;
-}
-
-.footer__contacts-email {
-    width: 133px;
-    height: 24px;
-    display: flex;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 135%;
-    border-bottom: 1px solid;
-    text-decoration: none;  
-
-    color: #000000;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer__links-list { 
+    min-width: 149px;
     list-style: none;
     display: flex; 
-    width: 149px;
     flex-direction: column;
     font-weight: 400;
     font-size: 18px;
     text-align: center;
     color: #000;
-    margin: 0 0 33px 188px;
+    margin: 0 0 33px 218px;
+    align-items: center;
+}
+
+.footer__links-list-item-active .footer__menu-link {
+    text-decoration: none;
+}
+
+.li__with-line .footer__menu-link {
+    border-bottom: 1px solid;
+    text-decoration: none;  
 }
 
 .footer__social-list {
     display: flex;
     flex-direction: row;
-    width: 240px;
-    height: 48px;
     margin: 0 0 49px 185px;
     gap: 48px;
+    list-style: none;
+    align-items: center;
 }
 
-.footer__links-list-item-active .footer__menu-link {
-    text-decoration: none;
+.footer__social-list-item {
+    display: flex;
+    width: 48px;
+    height: 48px;
 }
 
