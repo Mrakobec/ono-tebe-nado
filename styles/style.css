@@ -9,7 +9,7 @@
 
 .header__links-list {
     list-style: circle;
-    margin: 44px 0px 40px 26px;
+    margin: 44px 0 40px 26px;
     display: flex;
     gap: 32px;
 }
